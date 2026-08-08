@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- תמונת המגרש -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivCourtImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:background="#E0E0E0"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- סוג הספורט -->
+        <TextView
+            android:id="@+id/tvSportType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Ping Pong"
+            app:layout_constraintStart_toEndOf="@id/ivCourtImage"
+            app:layout_constraintEnd_toStartOf="@+id/btnJoin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- מיקום המשחק -->
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            tools:text="מגרש ספורט אפקה"
+            app:layout_constraintStart_toStartOf="@id/tvSportType"
+            app:layout_constraintEnd_toStartOf="@+id/btnJoin"
+            app:layout_constraintTop_toBottomOf="@id/tvSportType" />
+
+        <!-- מד משתתפים -->
+        <TextView
+            android:id="@+id/tvCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:textColor="#FF5722"
+            android:textStyle="bold"
+            tools:text="Players: 2/4"
+            app:layout_constraintStart_toStartOf="@id/tvSportType"
+            app:layout_constraintTop_toBottomOf="@id/tvLocation" />
+
+        <!-- תאריך ושעה -->
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            tools:text="21/07/2026 18:00"
+            app:layout_constraintStart_toStartOf="@id/tvSportType"
+            app:layout_constraintTop_toBottomOf="@id/tvCapacity" />
+
+        <!-- כפתור הצטרפות -->
+        <Button
+            android:id="@+id/btnJoin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Join"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnChat"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/btnChat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnJoin"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

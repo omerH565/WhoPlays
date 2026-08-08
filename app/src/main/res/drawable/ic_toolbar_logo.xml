@@ -1,0 +1,84 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="50dp"
+    android:viewportWidth="200"
+    android:viewportHeight="50">
+
+    <!-- Stylized W Icon (Same as App Logo) -->
+    <group android:translateX="5" android:translateY="5">
+        <path
+            android:pathData="M20,20c0,-8.84 7.16,-16 16,-16s16,7.16 16,16s-7.16,16 -16,16s-16,-7.16 -16,-16z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:centerX="36"
+                    android:centerY="20"
+                    android:gradientRadius="16"
+                    android:type="radial">
+                    <item android:color="#FF7E57C2" android:offset="0" />
+                    <item android:color="#FF673AB7" android:offset="1" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:fillColor="#FFFF5722"
+            android:pathData="M36,15m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2.5"
+            android:strokeLineCap="round"
+            android:pathData="M30,22 L33,28 L36,22 L39,28 L42,22" />
+    </group>
+
+    <!-- Stylized "WhoPlays" Text using Paths -->
+    <group android:translateX="65" android:translateY="15">
+        <!-- W -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M0,0 L5,18 L10,0 L15,18 L20,0" />
+        <!-- h -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:pathData="M28,-5 L28,18 M28,5 C32,5 36,5 36,12 L36,18" />
+        <!-- o -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3.5"
+            android:pathData="M48,11.5c0,4.14 -2.91,7.5 -6.5,7.5s-6.5,-3.36 -6.5,-7.5s2.91,-7.5 6.5,-7.5s6.5,3.36 6.5,7.5z" />
+        <!-- P -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:pathData="M60,-5 L60,18 M60,0 L68,0 C72,0 72,9 68,9 L60,9" />
+        <!-- l -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:pathData="M78,-5 L78,18" />
+        <!-- a -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:pathData="M95,18 L95,5 C95,5 92,4 88,4 C84,4 84,8 84,11 C84,14 84,18 88,18 L95,18" />
+        <!-- y -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:pathData="M102,5 L108,18 L114,5 M108,18 L103,30" />
+        <!-- s -->
+        <path
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:pathData="M128,6 C128,6 122,4 122,8 C122,12 128,12 128,16 C128,20 122,18 122,18" />
+    </group>
+</vector>
