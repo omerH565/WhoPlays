@@ -1,5 +1,6 @@
 # WhoPlays - Social Sports App ⚽🏀🎾
 **Developed by:** Omer Halili
+<img width="670" height="1444" alt="image" src="https://github.com/user-attachments/assets/d366ea67-e68e-4ca0-98e4-5921d1f294dc" />
 
 WhoPlays is a comprehensive social sports application designed to help users find, manage, and join local group sports events in real-time. 
 The app transitions from simple list management to a fully-fledged production-ready system with geographic location tracking, real-time chat, and cloud automation.
